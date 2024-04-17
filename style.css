@@ -1,0 +1,83 @@
+@font-face {
+    font-family:"Great vibe" ;
+    src: url(./font/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(./font/Gilroy-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+   
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(248, 248, 230);
+    position: relative;
+}
+
+#main h1{
+    font-family:"Great vibe" ;
+    font-size: 5vw;
+    text-align: center;
+    color: goldenrod;
+    font-weight: 300;
+}
+
+.container{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.7vw;
+}
+
+.box{
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2vw 1vw;
+    width: 70%;
+}
+
+.ques{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.ri-add-box-line{
+    font-size: 2vw;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+
+.ans {
+    color: white;
+     opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out; 
+/* ------------------------- */
+
+}
+
+.myStyle {
+    padding: 0vw 1vw;
+    font-size: 1.2vw;
+    opacity: 1;
+    max-height: 10vh; 
+/* ----------------------------------------- */
+
+}
